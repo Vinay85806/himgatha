@@ -35,6 +35,7 @@ export type TravelPackage = {
   meta_description?: string | null;
   keywords?: string[];
   created_at?: string;
+  active?: boolean;
 };
 
 // Select everything; missing columns simply come back undefined.
@@ -70,6 +71,7 @@ export async function getPackages(limit = 6): Promise<TravelPackage[]> {
   const { data, error } = await supabase
     .from("packages")
     .select(COLUMNS)
+    .eq("active", true)
     .order("created_at", { ascending: false })
     .limit(limit);
 
@@ -89,6 +91,7 @@ export async function getPackageById(
     .from("packages")
     .select(COLUMNS)
     .eq("id", id)
+    .eq("active", true)
     .maybeSingle();
 
   if (error) {
@@ -107,6 +110,7 @@ export async function getPackageBySlug(
     .from("packages")
     .select(COLUMNS)
     .eq("slug", slug)
+    .eq("active", true)
     .maybeSingle();
 
   if (error) {
@@ -194,6 +198,7 @@ export async function getPackagesByDestinationSlug(
     .from("packages")
     .select(COLUMNS)
     .eq("destination_slug", destinationSlug)
+    .eq("active", true)
     .order("price", { ascending: true });
 
   if (error) {
@@ -210,7 +215,8 @@ export async function getAllPackageSlugs(): Promise<
 > {
   const { data, error } = await supabase
     .from("packages")
-    .select("id, slug");
+    .select("id, slug")
+    .eq("active", true);
 
   if (error) {
     console.error("Failed to fetch slugs:", error.message);

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
-import { Plus, Pencil, Trash, Eye, Search } from "@/components/icons";
+import { Plus, Pencil, Trash, Eye, EyeOff, Search } from "@/components/icons";
 import type { TravelPackage } from "@/lib/packages";
 
 export default function PackagesPage() {
@@ -11,12 +11,13 @@ export default function PackagesPage() {
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
   const [deleting, setDeleting] = useState<string | null>(null);
+  const [toggling, setToggling] = useState<string | null>(null);
 
   const load = async () => {
     setLoading(true);
     const { data } = await supabase
       .from("packages")
-      .select("id, title, slug, destination, destination_slug, price, duration, nights, days, created_at, image_url")
+      .select("id, title, slug, destination, destination_slug, price, duration, nights, days, created_at, image_url, active")
       .order("created_at", { ascending: false });
     setPackages((data as TravelPackage[]) ?? []);
     setLoading(false);
@@ -41,6 +42,16 @@ export default function PackagesPage() {
     await supabase.from("packages").delete().eq("id", pkg.id);
     setPackages((prev) => prev.filter((p) => p.id !== pkg.id));
     setDeleting(null);
+  };
+
+  const toggleActive = async (pkg: TravelPackage) => {
+    setToggling(pkg.id);
+    const nextActive = !(pkg.active ?? true);
+    await supabase.from("packages").update({ active: nextActive }).eq("id", pkg.id);
+    setPackages((prev) =>
+      prev.map((p) => (p.id === pkg.id ? { ...p, active: nextActive } : p))
+    );
+    setToggling(null);
   };
 
   const inr = (n: number) => `₹${n.toLocaleString("en-IN")}`;
@@ -110,7 +121,9 @@ export default function PackagesPage() {
             {filtered.map((pkg) => (
               <div
                 key={pkg.id}
-                className="flex items-center gap-4 px-6 py-4 hover:bg-ivory/60 transition-colors"
+                className={`flex items-center gap-4 px-6 py-4 hover:bg-ivory/60 transition-colors ${
+                  pkg.active === false ? "opacity-50" : ""
+                }`}
               >
                 {/* Thumb */}
                 <div className="relative h-12 w-16 shrink-0 overflow-hidden rounded-xl bg-ink/8">
@@ -125,9 +138,16 @@ export default function PackagesPage() {
 
                 {/* Info */}
                 <div className="min-w-0 flex-1">
-                  <p className="truncate text-sm font-semibold text-ink">
-                    {pkg.title}
-                  </p>
+                  <div className="flex items-center gap-2">
+                    <p className="truncate text-sm font-semibold text-ink">
+                      {pkg.title}
+                    </p>
+                    {pkg.active === false && (
+                      <span className="shrink-0 rounded-full bg-ink/8 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wide text-ink/45">
+                        Hidden
+                      </span>
+                    )}
+                  </div>
                   <div className="mt-0.5 flex flex-wrap items-center gap-x-3 gap-y-0.5 text-xs text-ink/45">
                     {pkg.destination && <span>{pkg.destination}</span>}
                     {pkg.duration && <span>· {pkg.duration}</span>}
@@ -148,6 +168,22 @@ export default function PackagesPage() {
                       <Eye className="h-4 w-4" />
                     </a>
                   )}
+                  <button
+                    onClick={() => toggleActive(pkg)}
+                    disabled={toggling === pkg.id}
+                    title={pkg.active === false ? "Show on live site" : "Hide from live site"}
+                    className={`grid h-9 w-9 place-items-center rounded-xl border transition-colors disabled:opacity-40 ${
+                      pkg.active === false
+                        ? "border-ink/10 text-ink/40 hover:border-green-400 hover:text-green-600"
+                        : "border-ink/10 text-ink/40 hover:border-amber-400 hover:text-amber-600"
+                    }`}
+                  >
+                    {pkg.active === false ? (
+                      <Eye className="h-4 w-4" />
+                    ) : (
+                      <EyeOff className="h-4 w-4" />
+                    )}
+                  </button>
                   <Link
                     href={`/admin/packages/${pkg.id}/edit`}
                     title="Edit"
