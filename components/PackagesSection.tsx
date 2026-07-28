@@ -12,21 +12,6 @@ const BEACH_SLUGS = new Set([
   "singapore", "vietnam", "kerala",
 ]);
 
-function interleave<T>(domestic: T[], intl: T[]): T[] {
-  if (intl.length === 0) return domestic;
-  if (domestic.length === 0) return intl;
-  const ratio = domestic.length / intl.length;
-  const result: T[] = [];
-  let di = 0, ii = 0;
-  while (ii < intl.length) {
-    const target = Math.floor((ii + 1) * ratio);
-    while (di < target && di < domestic.length) result.push(domestic[di++]);
-    result.push(intl[ii++]);
-  }
-  while (di < domestic.length) result.push(domestic[di++]);
-  return result;
-}
-
 export default async function PackagesSection({ filter }: { filter?: string }) {
   const [packages, destinations] = await Promise.all([
     getPackages(200),
@@ -64,7 +49,8 @@ export default async function PackagesSection({ filter }: { filter?: string }) {
 
   const domestic = allRows.filter((r) => !r.isInternational);
   const international = allRows.filter((r) => r.isInternational);
-  const interleavedRows = interleave(domestic, international);
+  // Domestic (north-region destinations first, per sort_order) leads; international trails at the end.
+  const orderedRows = [...domestic, ...international];
 
   // Apply filter from search tab selection
   const rows =
@@ -73,10 +59,10 @@ export default async function PackagesSection({ filter }: { filter?: string }) {
       : filter === "international"
       ? international
       : filter === "beach"
-      ? interleavedRows.filter((r) => BEACH_SLUGS.has(r.slug))
-      : interleavedRows;
+      ? orderedRows.filter((r) => BEACH_SLUGS.has(r.slug))
+      : orderedRows;
 
-  const tabs: TabItem[] = interleavedRows
+  const tabs: TabItem[] = orderedRows
     .filter((r) => r.packages.length > 0)
     .map((r) => ({
       id: `rail-${r.slug}`,

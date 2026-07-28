@@ -4,7 +4,7 @@ import { useState } from "react";
 import { WhatsApp, XMark } from "./icons";
 import EnquiryForm from "./EnquiryForm";
 
-const WHATSAPP_NUMBER = "918580610324";
+const WHATSAPP_NUMBER = "916230952069";
 
 export default function PackageCardActions({
   title,

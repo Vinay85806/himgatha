@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { WhatsApp } from "@/components/icons";
 
-const PHONE = "918580610324";
+const PHONE = "916230952069";
 const DEFAULT_MSG = encodeURIComponent(
   "Hi 360 Travellers! I'm interested in planning a trip. Can you help me?"
 );

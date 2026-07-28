@@ -10,20 +10,34 @@ const LOGO =
 const columns = [
   {
     title: "Destinations",
-    links: ["Bali", "Maldives", "Kashmir", "Santorini", "Swiss Alps", "Kyoto"],
+    links: [
+      { label: "Bali", href: "/destinations/bali" },
+      { label: "Maldives", href: "/destinations/maldives" },
+      { label: "Kashmir", href: "/destinations/kashmir" },
+      { label: "Himachal Pradesh", href: "/destinations/himachal-pradesh" },
+      { label: "Spiti Valley", href: "/destinations/spiti-valley" },
+      { label: "Ladakh", href: "/destinations/ladakh" },
+    ],
   },
   {
     title: "Company",
-    links: ["About us", "How we plan", "Careers", "Press", "Blog", "Contact"],
+    links: [
+      { label: "About us", href: "/about" },
+      { label: "How we plan", href: "/how-we-plan" },
+      { label: "Careers", href: "/careers" },
+      { label: "Press", href: "/press" },
+      { label: "Blog", href: "/blog" },
+      { label: "Contact", href: "/contact" },
+    ],
   },
   {
     title: "Support",
     links: [
-      "Help centre",
-      "Booking policy",
-      "Travel insurance",
-      "Visa guidance",
-      "FAQs",
+      { label: "Help centre", href: "/help-centre" },
+      { label: "Booking policy", href: "/booking-policy" },
+      { label: "Travel insurance", href: "/travel-insurance" },
+      { label: "Visa guidance", href: "/visa-guidance" },
+      { label: "FAQs", href: "/faqs" },
     ],
   },
 ];
@@ -74,18 +88,24 @@ export default function Footer() {
 
             <div className="mt-6 space-y-2.5 text-sm text-cream/70">
               <a
-                href="tel:+918580610324"
+                href="tel:+916230952069"
                 className="flex items-center gap-2.5 transition-colors hover:text-gold-soft"
               >
                 <Phone className="h-4 w-4 text-gold-soft" />
-                +91 85806 10324
+                +91 62309 52069
               </a>
               <a
-                href="mailto:hello@360travellers.com"
+                href="mailto:info.360travellers@gmail.com"
                 className="flex items-center gap-2.5 transition-colors hover:text-gold-soft"
               >
                 <Mail className="h-4 w-4 text-gold-soft" />
-                hello@360travellers.com
+                info.360travellers@gmail.com
+              </a>
+              <a
+                href="mailto:devenderthakur354@gmail.com"
+                className="flex items-center gap-2.5 pl-[26px] text-xs text-cream/50 transition-colors hover:text-gold-soft"
+              >
+                devenderthakur354@gmail.com
               </a>
             </div>
 
@@ -115,12 +135,12 @@ export default function Footer() {
               </h3>
               <ul className="mt-5 space-y-3">
                 {col.links.map((l) => (
-                  <li key={l}>
+                  <li key={l.label}>
                     <Link
-                      href="#"
+                      href={l.href}
                       className="text-sm text-cream/70 transition-colors hover:text-gold-soft"
                     >
-                      {l}
+                      {l.label}
                     </Link>
                   </li>
                 ))}
@@ -133,16 +153,25 @@ export default function Footer() {
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/8 pt-7 text-sm text-cream/45 sm:flex-row">
           <p>© {new Date().getFullYear()} 360 Travellers. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            <Link href="#" className="transition-colors hover:text-gold-soft">
+            <Link href="/privacy" className="transition-colors hover:text-gold-soft">
               Privacy
             </Link>
-            <Link href="#" className="transition-colors hover:text-gold-soft">
+            <Link href="/terms" className="transition-colors hover:text-gold-soft">
               Terms
             </Link>
-            <Link href="#" className="transition-colors hover:text-gold-soft">
+            <Link href="/cookies" className="transition-colors hover:text-gold-soft">
               Cookies
             </Link>
             <span className="text-cream/30">Made for explorers ✦</span>
+            <span className="text-cream/30">
+              Developed by{" "}
+              <a
+                href="mailto:vinay70184@gmail.com"
+                className="text-cream/45 underline decoration-cream/20 underline-offset-2 transition-colors hover:text-gold-soft"
+              >
+                Karan
+              </a>
+            </span>
           </div>
         </div>
       </div>
