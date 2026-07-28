@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Manrope } from "next/font/google";
 import Script from "next/script";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import CallFloat from "@/components/CallFloat";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -51,6 +52,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
         <WhatsAppFloat />
+        <CallFloat />
       </body>
 
       {/* Microsoft Clarity — website analytics & session recordings */}
