@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllPackageSlugs, getDestinations } from "@/lib/packages";
 
-const SITE = "https://360travellers.com";
+const SITE = "https://himgatha.com";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [slugs, destinations] = await Promise.all([

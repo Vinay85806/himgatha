@@ -21,7 +21,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://360travellers.com"),
+  metadataBase: new URL("https://himgatha.com"),
   title: "360 Travellers — Curated Luxury Journeys, Effortlessly Yours",
   description:
     "Handcrafted holidays, private experiences and unforgettable stays across 60+ destinations. Bali, Maldives, Kashmir, Santorini and beyond — designed around you.",

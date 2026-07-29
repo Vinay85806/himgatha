@@ -18,7 +18,7 @@ import PackageCardActions from "@/components/PackageCardActions";
 
 type Props = { params: Promise<{ slug: string }> };
 
-const SITE = "https://360travellers.com";
+const SITE = "https://himgatha.com";
 
 export async function generateStaticParams() {
   const destinations = await getDestinations();
