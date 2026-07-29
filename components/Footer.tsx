@@ -94,11 +94,11 @@ export default function Footer() {
                 +91 62309 52069
               </a>
               <a
-                href="mailto:info.360travellers@gmail.com"
+                href="mailto:Info.himgathatravels@gmail.com"
                 className="flex items-center gap-2.5 transition-colors hover:text-gold-soft"
               >
                 <Mail className="h-4 w-4 text-gold-soft" />
-                info.360travellers@gmail.com
+                Info.himgathatravels@gmail.com
               </a>
               <a
                 href="mailto:devenderthakur354@gmail.com"

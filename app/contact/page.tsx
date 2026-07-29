@@ -23,8 +23,8 @@ const CHANNELS = [
   {
     Icon: Mail,
     label: "General enquiries",
-    value: "info.360travellers@gmail.com",
-    href: "mailto:info.360travellers@gmail.com",
+    value: "Info.himgathatravels@gmail.com",
+    href: "mailto:Info.himgathatravels@gmail.com",
   },
   {
     Icon: Mail,
