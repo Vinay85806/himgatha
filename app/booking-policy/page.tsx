@@ -14,7 +14,7 @@ export default function BookingPolicyPage() {
     <main className="min-h-screen overflow-x-hidden bg-cream">
       <Navbar />
 
-      <div className="border-b border-ink/8 bg-cream pt-28 pb-4 sm:pt-32">
+      <div className="border-b border-ink/8 bg-cream pt-36 pb-4 sm:pt-40">
         <div className="mx-auto max-w-3xl px-5 sm:px-8">
           <span className="kicker text-gold-deep">
             <span className="h-px w-8 bg-gold-deep" />

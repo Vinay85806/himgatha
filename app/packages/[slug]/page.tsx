@@ -167,7 +167,7 @@ export default async function PackageDetailPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(pkg)) }}
       />
 
-      <div className="mx-auto max-w-7xl px-5 pt-24 sm:px-8 sm:pt-28">
+      <div className="mx-auto max-w-7xl px-5 pt-32 sm:px-8 sm:pt-36">
         {/* Gallery */}
         <Reveal>
           <PackageGallery images={gallery} alt={pkg.title} />

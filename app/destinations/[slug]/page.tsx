@@ -151,7 +151,7 @@ export default async function DestinationPage({ params }: Props) {
       <Navbar />
 
       {/* Page header */}
-      <div className="border-b border-ink/8 bg-cream pt-24 pb-8 sm:pt-28">
+      <div className="border-b border-ink/8 bg-cream pt-32 pb-8 sm:pt-36">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <Link
             href="/#all-packages"

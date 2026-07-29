@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Menu, Close } from "./icons";
+import { Menu, Close, Phone, Mail } from "./icons";
 import { usePlanTrip } from "./PlanTripContext";
 
 const LOGO = "/images/himgatha-logo.png";
@@ -40,12 +40,35 @@ export default function Navbar() {
     <>
     <header
       className={`fixed inset-x-0 top-0 z-50 backdrop-blur-md transition-all duration-500 ${
-        scrolled
-          ? "bg-cream/95 shadow-soft py-3"
-          : "bg-cream/80 py-5"
+        scrolled ? "bg-cream/95 shadow-soft" : "bg-cream/80"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 sm:px-8">
+      {/* Thin utility bar — phone + email */}
+      <div className="border-b border-ink/8 bg-navy text-cream/85">
+        <div className="mx-auto flex max-w-7xl items-center justify-center gap-5 px-5 py-1.5 text-xs font-medium sm:justify-end sm:gap-6 sm:px-8">
+          <a
+            href="tel:+916230952069"
+            className="flex items-center gap-1.5 transition-colors hover:text-gold-soft"
+          >
+            <Phone className="h-3.5 w-3.5" />
+            +91 62309 52069
+          </a>
+          <span className="h-3 w-px bg-cream/25" />
+          <a
+            href="mailto:Info.himgathatravels@gmail.com"
+            className="hidden items-center gap-1.5 transition-colors hover:text-gold-soft sm:flex"
+          >
+            <Mail className="h-3.5 w-3.5" />
+            Info.himgathatravels@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <nav
+        className={`mx-auto flex max-w-7xl items-center justify-between px-5 transition-all duration-500 sm:px-8 ${
+          scrolled ? "py-3" : "py-5"
+        }`}
+      >
         {/* Brand */}
         <Link href="/" className="-my-2 sm:-my-3" aria-label="Himgatha — home">
           <Image

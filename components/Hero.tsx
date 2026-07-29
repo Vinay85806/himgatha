@@ -99,7 +99,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy/70 to-transparent" />
       </div>
 
-      <div className="mx-auto flex w-full max-w-7xl flex-col items-center px-5 pb-16 pt-28 text-center sm:px-8 sm:pt-32">
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center px-5 pb-16 pt-36 text-center sm:px-8 sm:pt-40">
         {/* Headline */}
         <div className="max-w-3xl">
           <span className="kicker animate-fade-up justify-center text-sky-soft">
