@@ -76,7 +76,8 @@ export const destinations: Destination[] = [
     region: "Uttarakhand, India",
     experiences: 8,
     fromPrice: 8000,
-    image: "/images/placeholder.svg",
+    image:
+      "https://images.unsplash.com/photo-1643263904933-2aa9fb29bd81?auto=format&fit=crop&w=1200&q=80",
     slug: "uttarakhand",
   },
 ];
