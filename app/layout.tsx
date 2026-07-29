@@ -3,6 +3,8 @@ import { Fraunces, Manrope } from "next/font/google";
 import Script from "next/script";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import CallFloat from "@/components/CallFloat";
+import { PlanTripProvider } from "@/components/PlanTripContext";
+import PlanTripPopup from "@/components/PlanTripPopup";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -52,9 +54,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fraunces.variable} ${manrope.variable}`}>
       <body className="font-sans antialiased">
-        {children}
-        <WhatsAppFloat />
-        <CallFloat />
+        <PlanTripProvider>
+          {children}
+          <WhatsAppFloat />
+          <CallFloat />
+          <PlanTripPopup />
+        </PlanTripProvider>
       </body>
 
       {/* Microsoft Clarity — website analytics & session recordings */}

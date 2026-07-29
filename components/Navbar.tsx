@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Menu, Close } from "./icons";
+import { usePlanTrip } from "./PlanTripContext";
 
 const LOGO = "/images/himgatha-logo.png";
 
@@ -19,6 +20,7 @@ const links = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { openPopup } = usePlanTrip();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -72,12 +74,12 @@ export default function Navbar() {
 
         {/* CTA + mobile toggle */}
         <div className="flex items-center gap-3">
-          <Link
-            href="/#search"
+          <button
+            onClick={openPopup}
             className="hidden rounded-full bg-blue px-5 py-2.5 text-sm font-semibold text-cream transition-all duration-300 hover:bg-blue-deep sm:inline-flex"
           >
             Plan My Trip
-          </Link>
+          </button>
           <button
             aria-label="Open menu"
             onClick={() => setOpen(true)}
@@ -136,13 +138,15 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <Link
-            href="/#search"
-            onClick={() => setOpen(false)}
+          <button
+            onClick={() => {
+              setOpen(false);
+              openPopup();
+            }}
             className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-blue px-6 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-blue-deep"
           >
             Plan My Trip
-          </Link>
+          </button>
         </aside>
       </div>
     </>

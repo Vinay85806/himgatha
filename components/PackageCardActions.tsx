@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { WhatsApp, XMark } from "./icons";
 import EnquiryForm from "./EnquiryForm";
+import { usePlanTrip } from "./PlanTripContext";
 
 const WHATSAPP_NUMBER = "916230952069";
 
@@ -20,6 +21,14 @@ export default function PackageCardActions({
   duration: string;
 }) {
   const [open, setOpen] = useState(false);
+  const { setOtherFormOpen } = usePlanTrip();
+
+  useEffect(() => {
+    setOtherFormOpen(open);
+    return () => {
+      if (open) setOtherFormOpen(false);
+    };
+  }, [open, setOtherFormOpen]);
 
   const waText = encodeURIComponent(
     `Hi Himgatha! I'm interested in booking:\n\n*${title}*\nDuration: ${duration}\nPrice: ₹${price.toLocaleString("en-IN")}/person\n\nCould you please share more details?`
