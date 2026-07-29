@@ -6,7 +6,7 @@ import Image from "next/image";
 import { supabase } from "@/lib/supabase";
 
 const LOGO =
-  "https://fqrghsvqijxnglbrjhwo.supabase.co/storage/v1/object/public/images/logos/360travellers_logo.png";
+  "https://fqrghsvqijxnglbrjhwo.supabase.co/storage/v1/object/public/images/logos/himgathamainlogo.jpeg";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -39,8 +39,8 @@ export default function LoginPage() {
         <div className="mb-8 text-center">
           <Image
             src={LOGO}
-            alt="360 Travellers"
-            width={160}
+            alt="Himgatha"
+            width={75}
             height={42}
             className="mx-auto h-10 w-auto"
           />

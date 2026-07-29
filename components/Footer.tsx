@@ -5,7 +5,7 @@ import Reveal from "./Reveal";
 import NewsletterForm from "./NewsletterForm";
 
 const LOGO =
-  "https://fqrghsvqijxnglbrjhwo.supabase.co/storage/v1/object/public/images/logos/360travellers_logo.png";
+  "https://fqrghsvqijxnglbrjhwo.supabase.co/storage/v1/object/public/images/logos/himgathamainlogo.jpeg";
 
 const columns = [
   {
@@ -75,8 +75,8 @@ export default function Footer() {
             <Link href="#top" className="flex items-center" aria-label="360 Travellers — home">
               <Image
                 src={LOGO}
-                alt="360 Travellers"
-                width={170}
+                alt="Himgatha"
+                width={80}
                 height={45}
                 className="h-10 w-auto"
               />

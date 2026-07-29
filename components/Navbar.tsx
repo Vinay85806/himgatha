@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { Menu, Close } from "./icons";
 
 const LOGO =
-  "https://fqrghsvqijxnglbrjhwo.supabase.co/storage/v1/object/public/images/logos/360travellers_logo.png";
+  "https://fqrghsvqijxnglbrjhwo.supabase.co/storage/v1/object/public/images/logos/himgathamainlogo.jpeg";
 
 
 const links = [
@@ -49,8 +49,8 @@ export default function Navbar() {
         <Link href="/" className="-my-2 sm:-my-3" aria-label="360 Travellers — home">
           <Image
             src={LOGO}
-            alt="360 Travellers"
-            width={240}
+            alt="Himgatha"
+            width={112}
             height={63}
             priority
             className="block h-14 w-auto sm:h-16"
@@ -111,8 +111,8 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <Image
               src={LOGO}
-              alt="360 Travellers"
-              width={140}
+              alt="Himgatha"
+              width={66}
               height={37}
               className="h-8 w-auto"
             />
