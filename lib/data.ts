@@ -37,9 +37,10 @@ export const destinations: Destination[] = [
   {
     name: "Himachal Pradesh",
     region: "Himachal Pradesh, India",
-    experiences: 15,
-    fromPrice: 10999,
-    image: "/images/placeholder.svg",
+    experiences: 13,
+    fromPrice: 6500,
+    image:
+      "https://fqrghsvqijxnglbrjhwo.supabase.co/storage/v1/object/public/images/packages/1785257822196_2w8g61tr9d2.jpg",
     featured: true,
     slug: "himachal-pradesh",
   },
