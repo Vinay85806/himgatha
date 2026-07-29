@@ -22,20 +22,22 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://himgatha.com"),
-  title: "360 Travellers — Curated Luxury Journeys, Effortlessly Yours",
+  title: "Himgatha — Stories of the Himalayas | Tours & Travels",
   description:
-    "Handcrafted holidays, private experiences and unforgettable stays across 60+ destinations. Bali, Maldives, Kashmir, Santorini and beyond — designed around you.",
+    "Handcrafted holidays, private experiences and unforgettable stays across the Himalayas and beyond. Himachal, Spiti, Ladakh, Kashmir, Uttarakhand and 60+ destinations — designed around you.",
   keywords: [
+    "Himalayan tours",
     "luxury travel",
     "custom holidays",
     "travel packages",
-    "Bali",
-    "Maldives",
+    "Himachal Pradesh",
+    "Spiti Valley",
+    "Ladakh",
     "Kashmir",
     "honeymoon packages",
   ],
   openGraph: {
-    title: "360 Travellers — Curated Luxury Journeys",
+    title: "Himgatha — Curated Luxury Journeys",
     description:
       "Handcrafted holidays and private experiences across 60+ destinations.",
     type: "website",

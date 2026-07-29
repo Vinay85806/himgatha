@@ -146,7 +146,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "We've used several luxury operators. 360 Travellers is the first that truly listened. Seamless logistics, zero stress, unforgettable moments.",
+      "We've used several luxury operators. Himgatha is the first that truly listened. Seamless logistics, zero stress, unforgettable moments.",
     name: "Rohan Kapoor",
     trip: "Maldives Overwater Retreat",
     rating: 5,

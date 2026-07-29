@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
-  title: "How We Plan Your Trip — 360 Travellers",
+  title: "How We Plan Your Trip — Himgatha",
   description:
-    "From first enquiry to landing back home — here's how 360 Travellers puts your itinerary together.",
+    "From first enquiry to landing back home — here's how Himgatha puts your itinerary together.",
 };
 
 const STEPS = [

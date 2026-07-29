@@ -22,7 +22,7 @@ export default function PackageCardActions({
   const [open, setOpen] = useState(false);
 
   const waText = encodeURIComponent(
-    `Hi 360 Travellers! I'm interested in booking:\n\n*${title}*\nDuration: ${duration}\nPrice: ₹${price.toLocaleString("en-IN")}/person\n\nCould you please share more details?`
+    `Hi Himgatha! I'm interested in booking:\n\n*${title}*\nDuration: ${duration}\nPrice: ₹${price.toLocaleString("en-IN")}/person\n\nCould you please share more details?`
   );
   const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${waText}`;
 

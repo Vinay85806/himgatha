@@ -29,9 +29,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const destinations = await getDestinations();
   const dest = destinations.find((d) => d.slug === slug);
-  if (!dest) return { title: "Destination not found — 360 Travellers" };
+  if (!dest) return { title: "Destination not found — Himgatha" };
 
-  const title = `${dest.name} Tour Packages — 360 Travellers`;
+  const title = `${dest.name} Tour Packages — Himgatha`;
   const description = `Explore handcrafted ${dest.name} tour packages. Curated itineraries, best prices, 24/7 on-trip support.`;
 
   return {

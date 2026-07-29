@@ -45,7 +45,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 sm:px-8">
         {/* Brand */}
-        <Link href="/" className="-my-2 sm:-my-3" aria-label="360 Travellers — home">
+        <Link href="/" className="-my-2 sm:-my-3" aria-label="Himgatha — home">
           <Image
             src={LOGO}
             alt="Himgatha"

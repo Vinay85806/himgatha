@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import PolicyAccordion from "@/components/PolicyAccordion";
 
 export const metadata: Metadata = {
-  title: "Booking Policy — 360 Travellers",
+  title: "Booking Policy — Himgatha",
   description:
-    "Confirmation, refund, cancellation and payment policies for 360 Travellers bookings.",
+    "Confirmation, refund, cancellation and payment policies for Himgatha bookings.",
 };
 
 export default function BookingPolicyPage() {

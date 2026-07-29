@@ -5,7 +5,7 @@ import { WhatsApp } from "@/components/icons";
 
 const PHONE = "916230952069";
 const DEFAULT_MSG = encodeURIComponent(
-  "Hi 360 Travellers! I'm interested in planning a trip. Can you help me?"
+  "Hi Himgatha! I'm interested in planning a trip. Can you help me?"
 );
 
 export default function WhatsAppFloat() {

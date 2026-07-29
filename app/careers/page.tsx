@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
-  title: "Careers — 360 Travellers",
-  description: "There are no open positions at 360 Travellers right now, but we're always happy to hear from people who love travel.",
+  title: "Careers — Himgatha",
+  description: "There are no open positions at Himgatha right now, but we're always happy to hear from people who love travel.",
 };
 
 export default function CareersPage() {
   return (
-    <StaticPage kicker="Join us" title="Careers at 360 Travellers">
+    <StaticPage kicker="Join us" title="Careers at Himgatha">
       <p>
         We don&rsquo;t have any open positions right now. We&rsquo;re a small
         team, and when that changes, we&rsquo;ll post the role here.

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — 360 Travellers",
-  description: "How 360 Travellers collects, uses and protects your information.",
+  title: "Privacy Policy — Himgatha",
+  description: "How Himgatha collects, uses and protects your information.",
 };
 
 export default function PrivacyPage() {
