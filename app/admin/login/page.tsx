@@ -5,8 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { supabase } from "@/lib/supabase";
 
-const LOGO =
-  "https://fqrghsvqijxnglbrjhwo.supabase.co/storage/v1/object/public/images/logos/himgathamainlogo.jpeg";
+const LOGO = "/images/himgatha-logo.png";
 
 export default function LoginPage() {
   const router = useRouter();

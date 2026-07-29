@@ -5,8 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Menu, Close } from "./icons";
 
-const LOGO =
-  "https://fqrghsvqijxnglbrjhwo.supabase.co/storage/v1/object/public/images/logos/himgathamainlogo.jpeg";
+const LOGO = "/images/himgatha-logo.png";
 
 
 const links = [

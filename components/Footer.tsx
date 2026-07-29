@@ -4,8 +4,7 @@ import { Mail, Phone, Instagram, Facebook, Twitter } from "./icons";
 import Reveal from "./Reveal";
 import NewsletterForm from "./NewsletterForm";
 
-const LOGO =
-  "https://fqrghsvqijxnglbrjhwo.supabase.co/storage/v1/object/public/images/logos/himgathamainlogo.jpeg";
+const LOGO = "/images/himgatha-logo.png";
 
 const columns = [
   {
