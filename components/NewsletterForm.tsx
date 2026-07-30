@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, ArrowRight } from "./icons";
+import { Mail, Phone, ArrowRight } from "./icons";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">(
     "idle"
   );
@@ -18,12 +19,13 @@ export default function NewsletterForm() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, phone }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Something went wrong.");
       setStatus("done");
       setEmail("");
+      setPhone("");
     } catch (err) {
       setStatus("error");
       setMsg(err instanceof Error ? err.message : "Something went wrong.");
@@ -40,17 +42,31 @@ export default function NewsletterForm() {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="flex max-w-md flex-col gap-2.5 sm:flex-row">
-        <div className="flex flex-1 items-center gap-2.5 rounded-full bg-cream px-5 py-3.5">
-          <Mail className="h-4 w-4 text-blue" />
-          <input
-            required
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Your email address"
-            className="w-full bg-transparent text-sm text-ink placeholder:text-ink/40 focus:outline-none"
-          />
+      <form onSubmit={handleSubmit} className="flex max-w-md flex-col gap-2.5">
+        <div className="flex flex-col gap-2.5 sm:flex-row">
+          <div className="flex flex-1 items-center gap-2.5 rounded-full bg-cream px-5 py-3.5">
+            <Mail className="h-4 w-4 text-blue" />
+            <input
+              required
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Your email address"
+              className="w-full bg-transparent text-sm text-ink placeholder:text-ink/40 focus:outline-none"
+            />
+          </div>
+          <div className="flex flex-1 items-center gap-2.5 rounded-full bg-cream px-5 py-3.5">
+            <Phone className="h-4 w-4 text-blue" />
+            <span className="text-sm text-ink/50">+91</span>
+            <input
+              required
+              type="tel"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              placeholder="Your phone number"
+              className="w-full bg-transparent text-sm text-ink placeholder:text-ink/40 focus:outline-none"
+            />
+          </div>
         </div>
         <button
           type="submit"

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { Phone } from "@/components/icons";
 
 const PHONE_E164 = "+916230952069";
@@ -8,6 +9,9 @@ const PHONE_DISPLAY = "+91 62309 52069";
 
 export default function CallFloat() {
   const [hovered, setHovered] = useState(false);
+  const pathname = usePathname();
+
+  if (pathname?.startsWith("/admin")) return null;
 
   return (
     <a

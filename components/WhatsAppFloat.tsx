@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { WhatsApp } from "@/components/icons";
 
 const PHONE = "916230952069";
@@ -10,6 +11,9 @@ const DEFAULT_MSG = encodeURIComponent(
 
 export default function WhatsAppFloat() {
   const [hovered, setHovered] = useState(false);
+  const pathname = usePathname();
+
+  if (pathname?.startsWith("/admin")) return null;
 
   return (
     <a
