@@ -71,9 +71,15 @@ export default function RootLayout({
         })(window, document, "clarity", "script", "x8dgyqpp9w");`}
       </Script>
 
-      {/* Tawk.to — live chat widget */}
+      {/* Tawk.to — live chat widget (bottom-left so it doesn't cover the WhatsApp/call buttons) */}
       <Script id="tawk-to" strategy="afterInteractive">
         {`var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+          Tawk_API.customStyle={
+            visibility:{
+              desktop:{position:'bl',xOffset:15,yOffset:15},
+              mobile:{position:'bl',xOffset:15,yOffset:15}
+            }
+          };
           (function(){
             var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
             s1.async=true;
