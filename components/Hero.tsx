@@ -89,7 +89,7 @@ export default function Hero() {
       <div className="absolute inset-0 -z-10">
         <Image
           src={heroBackground}
-          alt="Discover the world with Himgatha"
+          alt="Discover the world with Him Gatha"
           fill
           priority
           sizes="100vw"

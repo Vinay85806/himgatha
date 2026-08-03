@@ -24,7 +24,7 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://himgatha.com"),
-  title: "Himgatha — Stories of the Himalayas | Tours & Travels",
+  title: "Him Gatha — Stories of the Himalayas | Tours & Travels",
   description:
     "Handcrafted holidays, private experiences and unforgettable stays across the Himalayas and beyond. Himachal, Spiti, Ladakh, Kashmir, Uttarakhand and 60+ destinations — designed around you.",
   keywords: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "honeymoon packages",
   ],
   openGraph: {
-    title: "Himgatha — Curated Luxury Journeys",
+    title: "Him Gatha — Curated Luxury Journeys",
     description:
       "Handcrafted holidays and private experiences across 60+ destinations.",
     type: "website",
@@ -69,6 +69,19 @@ export default function RootLayout({
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "x8dgyqpp9w");`}
+      </Script>
+
+      {/* Tawk.to — live chat widget */}
+      <Script id="tawk-to" strategy="afterInteractive">
+        {`var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+          (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/6a6f64be218d031d498ec7e9/1jv1i32g5';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+          })();`}
       </Script>
     </html>
   );

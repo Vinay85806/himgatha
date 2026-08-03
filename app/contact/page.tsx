@@ -3,8 +3,8 @@ import StaticPage from "@/components/StaticPage";
 import { Mail, Phone, WhatsApp } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Himgatha",
-  description: "Get in touch with Himgatha by phone, WhatsApp or email.",
+  title: "Contact Us — Him Gatha",
+  description: "Get in touch with Him Gatha by phone, WhatsApp or email.",
 };
 
 const CHANNELS = [

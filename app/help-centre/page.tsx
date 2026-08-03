@@ -3,8 +3,8 @@ import Link from "next/link";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
-  title: "Help Centre — Himgatha",
-  description: "Find answers or get in touch with the Himgatha team.",
+  title: "Help Centre — Him Gatha",
+  description: "Find answers or get in touch with the Him Gatha team.",
 };
 
 const TOPICS = [

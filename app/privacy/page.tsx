@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Himgatha",
-  description: "How Himgatha collects, uses and protects your information.",
+  title: "Privacy Policy — Him Gatha",
+  description: "How Him Gatha collects, uses and protects your information.",
 };
 
 export default function PrivacyPage() {

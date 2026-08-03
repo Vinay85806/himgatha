@@ -38,7 +38,7 @@ export default function LoginPage() {
         <div className="mb-8 text-center">
           <Image
             src={LOGO}
-            alt="Himgatha"
+            alt="Him Gatha"
             width={75}
             height={42}
             className="mx-auto h-10 w-auto"

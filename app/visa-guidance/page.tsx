@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
-  title: "Visa Guidance — Himgatha",
-  description: "General visa guidance for international trips booked with Himgatha.",
+  title: "Visa Guidance — Him Gatha",
+  description: "General visa guidance for international trips booked with Him Gatha.",
 };
 
 export default function VisaGuidancePage() {

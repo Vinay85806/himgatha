@@ -24,9 +24,9 @@ const POLICIES = [
       "A minimum booking deposit of 25% of the total package cost is required to confirm your reservation. The remaining balance must be paid at least 15 days prior to the departure date. We accept UPI, net banking, credit/debit cards, and bank transfers. All prices are inclusive of applicable GST unless stated otherwise.",
   },
   {
-    title: "More on Himgatha",
+    title: "More on Him Gatha",
     content:
-      "Himgatha is a curated travel company specialising in handcrafted domestic and international tour packages for Indian travellers. We focus on personalised experiences, reliable service, and transparent pricing — no hidden costs, no surprises. Our team is passionate about travel and committed to making every trip a memory that lasts a lifetime.",
+      "Him Gatha is a curated travel company specialising in handcrafted domestic and international tour packages for Indian travellers. We focus on personalised experiences, reliable service, and transparent pricing — no hidden costs, no surprises. Our team is passionate about travel and committed to making every trip a memory that lasts a lifetime.",
   },
 ];
 

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
-  title: "Cookie Policy — Himgatha",
-  description: "How Himgatha uses cookies and similar technologies.",
+  title: "Cookie Policy — Him Gatha",
+  description: "How Him Gatha uses cookies and similar technologies.",
 };
 
 export default function CookiesPage() {

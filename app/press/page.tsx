@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
-  title: "Press — Himgatha",
-  description: "Media and press enquiries for Himgatha.",
+  title: "Press — Him Gatha",
+  description: "Media and press enquiries for Him Gatha.",
 };
 
 export default function PressPage() {

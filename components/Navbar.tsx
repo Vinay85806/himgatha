@@ -70,10 +70,10 @@ export default function Navbar() {
         }`}
       >
         {/* Brand */}
-        <Link href="/" className="-my-2 sm:-my-3" aria-label="Himgatha — home">
+        <Link href="/" className="-my-2 sm:-my-3" aria-label="Him Gatha — home">
           <Image
             src={LOGO}
-            alt="Himgatha"
+            alt="Him Gatha"
             width={112}
             height={63}
             priority
@@ -135,7 +135,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <Image
               src={LOGO}
-              alt="Himgatha"
+              alt="Him Gatha"
               width={66}
               height={37}
               className="h-8 w-auto"

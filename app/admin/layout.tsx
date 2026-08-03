@@ -73,7 +73,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <div className="border-b border-white/10 px-5 py-5">
           <Image
             src={LOGO}
-            alt="Himgatha"
+            alt="Him Gatha"
             width={66}
             height={37}
             className="h-8 w-auto brightness-0 invert"

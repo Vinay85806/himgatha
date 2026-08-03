@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
-  title: "Travel Insurance — Himgatha",
+  title: "Travel Insurance — Him Gatha",
   description: "What's covered on your trip, and why we recommend arranging your own travel insurance.",
 };
 

@@ -3,20 +3,20 @@ import StaticPage from "@/components/StaticPage";
 import { stats } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "About Us — Himgatha",
+  title: "About Us — Him Gatha",
   description:
-    "Himgatha is a boutique travel studio crafting personalised holidays and private experiences across 60+ destinations worldwide.",
+    "Him Gatha is a boutique travel studio crafting personalised holidays and private experiences across 60+ destinations worldwide.",
 };
 
 export default function AboutPage() {
   return (
     <StaticPage
       kicker="Our story"
-      title="About Himgatha"
+      title="About Him Gatha"
       subtitle="A boutique travel studio crafting personalised journeys, one trip at a time."
     >
       <p>
-        Himgatha is a curated travel company specialising in
+        Him Gatha is a curated travel company specialising in
         handcrafted domestic and international tour packages for Indian
         travellers. We focus on personalised experiences, reliable service,
         and transparent pricing — no hidden costs, no surprises.
