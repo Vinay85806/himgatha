@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions — Him Gatha",
-  description: "Terms and conditions for booking travel packages with Him Gatha.",
+  title: "Terms & Conditions — 360 Travellers",
+  description: "Terms and conditions for booking travel packages with 360 Travellers.",
 };
 
 export default function TermsPage() {

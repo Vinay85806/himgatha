@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllPackageSlugs, getDestinations } from "@/lib/packages";
 
-const SITE = "https://himgatha.com";
+const SITE = "https://360travellers.com";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [slugs, destinations] = await Promise.all([
@@ -25,8 +25,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  return [
+  const staticUrls: MetadataRoute.Sitemap = [
     { url: SITE, lastModified: now, changeFrequency: "daily", priority: 1 },
+    { url: `${SITE}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${SITE}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${SITE}/booking-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
+    { url: `${SITE}/faqs`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${SITE}/how-we-plan`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${SITE}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${SITE}/terms`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+  ];
+
+  return [
+    ...staticUrls,
     ...destinationUrls,
     ...packageUrls,
   ];

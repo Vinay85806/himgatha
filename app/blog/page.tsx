@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
-  title: "Blog — Him Gatha",
-  description: "Travel stories, guides and tips from Him Gatha — coming soon.",
+  title: "Blog — 360 Travellers",
+  description: "Travel stories, guides and tips from 360 Travellers — coming soon.",
 };
 
 export default function BlogPage() {
   return (
-    <StaticPage kicker="Stories" title="The Him Gatha blog">
+    <StaticPage kicker="Stories" title="The 360 Travellers blog">
       <p>
         We&rsquo;re working on travel guides, destination tips and stories
         from the road. Nothing published yet — check back soon, or follow us

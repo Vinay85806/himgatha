@@ -4,7 +4,7 @@ import { Mail, Phone, Instagram, Facebook, Twitter } from "./icons";
 import Reveal from "./Reveal";
 import NewsletterForm from "./NewsletterForm";
 
-const LOGO = "/images/himgatha-logo.png";
+const LOGO = "/images/360-travellers-logo.png";
 
 const columns = [
   {
@@ -71,10 +71,10 @@ export default function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="#top" className="flex items-center" aria-label="Him Gatha — home">
+            <Link href="#top" className="flex items-center" aria-label="360 Travellers home">
               <Image
                 src={LOGO}
-                alt="Him Gatha"
+                alt="360 Travellers"
                 width={80}
                 height={45}
                 className="h-10 w-auto"
@@ -87,18 +87,18 @@ export default function Footer() {
 
             <div className="mt-6 space-y-2.5 text-sm text-cream/70">
               <a
-                href="tel:+916230952069"
+                href="tel:+918580610324"
                 className="flex items-center gap-2.5 transition-colors hover:text-gold-soft"
               >
                 <Phone className="h-4 w-4 text-gold-soft" />
-                +91 62309 52069
+                +91 85806 10324
               </a>
               <a
-                href="mailto:Info.himgathatravels@gmail.com"
+                href="mailto:360travellers.com@gmail.com"
                 className="flex items-center gap-2.5 transition-colors hover:text-gold-soft"
               >
                 <Mail className="h-4 w-4 text-gold-soft" />
-                Info.himgathatravels@gmail.com
+                360travellers.com@gmail.com
               </a>
               <a
                 href="mailto:devenderthakur354@gmail.com"
@@ -150,7 +150,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/8 pt-7 text-sm text-cream/45 sm:flex-row">
-          <p>© {new Date().getFullYear()} Him Gatha. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} 360 Travellers. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <Link href="/privacy" className="transition-colors hover:text-gold-soft">
               Privacy

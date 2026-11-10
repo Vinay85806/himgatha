@@ -3,20 +3,20 @@ import StaticPage from "@/components/StaticPage";
 import { stats } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "About Us — Him Gatha",
+  title: "About Us — 360 Travellers",
   description:
-    "Him Gatha is a boutique travel studio crafting personalised holidays and private experiences across 60+ destinations worldwide.",
+    "360 Travellers is a travel company crafting personalised holidays and private experiences across India and international destinations.",
 };
 
 export default function AboutPage() {
   return (
     <StaticPage
       kicker="Our story"
-      title="About Him Gatha"
+      title="About 360 Travellers"
       subtitle="A boutique travel studio crafting personalised journeys, one trip at a time."
     >
       <p>
-        Him Gatha is a curated travel company specialising in
+        360 Travellers is a travel company specialising in
         handcrafted domestic and international tour packages for Indian
         travellers. We focus on personalised experiences, reliable service,
         and transparent pricing — no hidden costs, no surprises.

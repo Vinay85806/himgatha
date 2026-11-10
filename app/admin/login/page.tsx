@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { supabase } from "@/lib/supabase";
 
-const LOGO = "/images/himgatha-logo.png";
+const LOGO = "/images/360-travellers-logo.png";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -38,7 +38,7 @@ export default function LoginPage() {
         <div className="mb-8 text-center">
           <Image
             src={LOGO}
-            alt="Him Gatha"
+            alt="360 Travellers"
             width={75}
             height={42}
             className="mx-auto h-10 w-auto"

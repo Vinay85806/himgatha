@@ -3,8 +3,8 @@ import StaticPage from "@/components/StaticPage";
 import { Mail, Phone, WhatsApp } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Him Gatha",
-  description: "Get in touch with Him Gatha by phone, WhatsApp or email.",
+  title: "Contact Us — 360 Travellers",
+  description: "Get in touch with 360 Travellers by phone, WhatsApp or email.",
 };
 
 const CHANNELS = [
@@ -23,8 +23,8 @@ const CHANNELS = [
   {
     Icon: Mail,
     label: "General enquiries",
-    value: "Info.himgathatravels@gmail.com",
-    href: "mailto:Info.himgathatravels@gmail.com",
+    value: "360travellers.com@gmail.com",
+    href: "mailto:360travellers.com@gmail.com",
   },
   {
     Icon: Mail,
