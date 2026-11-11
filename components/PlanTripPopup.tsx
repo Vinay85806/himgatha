@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { usePlanTrip } from "./PlanTripContext";
 import { XMark } from "./icons";
 
-const SHOWN_KEY = "360travellers_plan_trip_shown";
+const SHOWN_KEY = "himgatha_plan_trip_shown";
 const AUTO_DELAY_MS = 6000;
 const RECHECK_MS = 1500;
 

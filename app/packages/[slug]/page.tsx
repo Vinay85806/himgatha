@@ -35,7 +35,7 @@ async function resolvePackage(param: string): Promise<TravelPackage | null> {
 
 type Props = { params: Promise<{ slug: string }> };
 
-const SITE = "https://360travellers.com";
+const SITE = "https://himgatha.com";
 
 // Pre-render every package page at build time for speed + SEO.
 export async function generateStaticParams() {
@@ -47,10 +47,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const pkg = await resolvePackage(slug);
 
-  if (!pkg) return { title: "Package not found — 360 Travellers" };
+  if (!pkg) return { title: "Package not found — Him Gatha" };
 
   // Prefer per-package SEO fields; fall back to sensible defaults.
-  const title = pkg.meta_title || `${pkg.title} — ${pkg.duration} | 360 Travellers`;
+  const title = pkg.meta_title || `${pkg.title} — ${pkg.duration} | Him Gatha`;
   const description =
     pkg.meta_description || pkg.description.slice(0, 160);
   const image = pkg.image_url || `${SITE}/images/placeholder.svg`;
@@ -108,7 +108,7 @@ function jsonLd(pkg: TravelPackage) {
     category: pkg.category === "domestic" ? "Domestic Tour" : "International Tour",
     brand: {
       "@type": "Brand",
-      name: "360 Travellers",
+      name: "Him Gatha",
     },
     offers: {
       "@type": "Offer",

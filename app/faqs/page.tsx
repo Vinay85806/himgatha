@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
-  title: "FAQs — 360 Travellers",
-  description: "Frequently asked questions about booking, payments and travelling with 360 Travellers.",
+  title: "FAQs — Him Gatha",
+  description: "Frequently asked questions about booking, payments and travelling with Him Gatha.",
 };
 
 const FAQS = [

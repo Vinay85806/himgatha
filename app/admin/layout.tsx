@@ -8,7 +8,7 @@ import { supabase } from "@/lib/supabase";
 import { LayoutGrid, PackageIcon, Plus, LogOut, Eye, Mail, MapPin } from "@/components/icons";
 import type { User } from "@supabase/supabase-js";
 
-const LOGO = "/images/360-travellers-logo.png";
+const LOGO = "/images/himgatha-logo.png";
 
 const NAV = [
   { href: "/admin", label: "Dashboard", Icon: LayoutGrid, exact: true },
@@ -73,7 +73,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <div className="border-b border-white/10 px-5 py-5">
           <Image
             src={LOGO}
-            alt="360 Travellers"
+            alt="Him Gatha"
             width={66}
             height={37}
             className="h-8 w-auto brightness-0 invert"

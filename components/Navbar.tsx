@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { Menu, Close, Phone, Mail } from "./icons";
 import { usePlanTrip } from "./PlanTripContext";
 
-const LOGO = "/images/360-travellers-logo.png";
+const LOGO = "/images/himgatha-logo.png";
 
 
 const links = [
@@ -47,19 +47,19 @@ export default function Navbar() {
       <div className="border-b border-ink/8 bg-navy text-cream/85">
         <div className="mx-auto flex max-w-7xl items-center justify-center gap-5 px-5 py-1.5 text-xs font-medium sm:justify-end sm:gap-6 sm:px-8">
           <a
-            href="tel:+918580610324"
+            href="tel:+916230952069"
             className="flex items-center gap-1.5 transition-colors hover:text-gold-soft"
           >
             <Phone className="h-3.5 w-3.5" />
-            +91 85806 10324
+            +91 62309 52069
           </a>
           <span className="h-3 w-px bg-cream/25" />
           <a
-            href="mailto:360travellers.com@gmail.com"
+            href="mailto:Info.himgathatravels@gmail.com"
             className="hidden items-center gap-1.5 transition-colors hover:text-gold-soft sm:flex"
           >
             <Mail className="h-3.5 w-3.5" />
-            360travellers.com@gmail.com
+            Info.himgathatravels@gmail.com
           </a>
         </div>
       </div>
@@ -70,10 +70,10 @@ export default function Navbar() {
         }`}
       >
         {/* Brand */}
-        <Link href="/" className="-my-2 sm:-my-3" aria-label="360 Travellers home">
+        <Link href="/" className="-my-2 sm:-my-3" aria-label="Him Gatha — home">
           <Image
             src={LOGO}
-            alt="360 Travellers"
+            alt="Him Gatha"
             width={112}
             height={63}
             priority
@@ -135,7 +135,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <Image
               src={LOGO}
-              alt="360 Travellers"
+              alt="Him Gatha"
               width={66}
               height={37}
               className="h-8 w-auto"

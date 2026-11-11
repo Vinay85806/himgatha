@@ -18,7 +18,7 @@ import PackageCardActions from "@/components/PackageCardActions";
 
 type Props = { params: Promise<{ slug: string }> };
 
-const SITE = "https://360travellers.com";
+const SITE = "https://himgatha.com";
 
 export async function generateStaticParams() {
   const destinations = await getDestinations();
@@ -29,9 +29,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const destinations = await getDestinations();
   const dest = destinations.find((d) => d.slug === slug);
-  if (!dest) return { title: "Destination not found — 360 Travellers" };
+  if (!dest) return { title: "Destination not found — Him Gatha" };
 
-  const title = `${dest.name} Tour Packages — 360 Travellers`;
+  const title = `${dest.name} Tour Packages — Him Gatha`;
   const description = `Explore handcrafted ${dest.name} tour packages. Curated itineraries, best prices, 24/7 on-trip support.`;
 
   return {

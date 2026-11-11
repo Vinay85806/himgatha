@@ -31,7 +31,7 @@ export default function PackageCardActions({
   }, [open, setOtherFormOpen]);
 
   const waText = encodeURIComponent(
-    `Hello 360 Travellers! I'm interested in booking:\n\n*${title}*\nDuration: ${duration}\nPrice: ₹${price.toLocaleString("en-IN")}/person\n\nCould you please share more details?`
+    `Hi Him Gatha! I'm interested in booking:\n\n*${title}*\nDuration: ${duration}\nPrice: ₹${price.toLocaleString("en-IN")}/person\n\nCould you please share more details?`
   );
   const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${waText}`;
 

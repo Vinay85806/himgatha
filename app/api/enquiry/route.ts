@@ -84,7 +84,7 @@ async function sendEnquiryEmail({
     const { Resend } = await import("resend");
     const resend = new Resend(apiKey);
     await resend.emails.send({
-      from: `360 Travellers <${from}>`,
+      from: `Him Gatha <${from}>`,
       to,
       replyTo: email,
       subject: `New enquiry — ${body.packageTitle ?? "General"} (${name})`,
