@@ -16,7 +16,7 @@ const POLICIES = [
   },
   {
     title: "Cancellation Policy",
-    content: `Cancellations must be submitted in writing to info@360travellers.com.\n\n• Cancelled 30+ days before departure: 90% refund\n• Cancelled 15–29 days before departure: 50% refund\n• Cancelled 7–14 days before departure: 25% refund\n• Cancelled within 7 days of departure: No refund\n\nCancellations due to natural calamities, government restrictions, or medical emergencies will be reviewed on a case-by-case basis.`,
+    content: `Cancellations must be submitted in writing to devenderthakur354@gmail.com.\n\n• Cancelled 30+ days before departure: 90% refund\n• Cancelled 15–29 days before departure: 50% refund\n• Cancelled 7–14 days before departure: 25% refund\n• Cancelled within 7 days of departure: No refund\n\nCancellations due to natural calamities, government restrictions, or medical emergencies will be reviewed on a case-by-case basis.`,
   },
   {
     title: "Payment Policy",

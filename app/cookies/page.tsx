@@ -40,10 +40,10 @@ export default function CookiesPage() {
       <p>
         Questions? Email{" "}
         <a
-          href="mailto:info@360travellers.com"
+          href="mailto:devenderthakur354@gmail.com"
           className="text-blue hover:underline"
         >
-          info@360travellers.com
+          devenderthakur354@gmail.com
         </a>
         .
       </p>

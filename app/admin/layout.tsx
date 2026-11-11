@@ -8,7 +8,7 @@ import { supabase } from "@/lib/supabase";
 import { LayoutGrid, PackageIcon, Plus, LogOut, Eye, Mail, MapPin } from "@/components/icons";
 import type { User } from "@supabase/supabase-js";
 
-const LOGO = "/images/360-travellers-logo.jpg";
+const LOGO = "/images/360-travellers-logo.png";
 
 const NAV = [
   { href: "/admin", label: "Dashboard", Icon: LayoutGrid, exact: true },

@@ -63,10 +63,10 @@ export default function TermsPage() {
       <p>
         Questions about these terms? Email{" "}
         <a
-          href="mailto:info@360travellers.com"
+          href="mailto:devenderthakur354@gmail.com"
           className="text-blue hover:underline"
         >
-          info@360travellers.com
+          devenderthakur354@gmail.com
         </a>
         .
       </p>

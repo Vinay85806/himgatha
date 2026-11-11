@@ -27,7 +27,7 @@ export default function VisaGuidancePage() {
         Requirements change and depend on your passport and travel dates —
         always confirm current visa rules with the relevant embassy or an
         official visa service before booking flights. Message us on
-        WhatsApp at +91 85806 10324 if you&rsquo;re unsure what your trip
+        WhatsApp at +91 62309 52069 if you&rsquo;re unsure what your trip
         needs.
       </p>
     </StaticPage>

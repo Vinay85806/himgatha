@@ -53,10 +53,10 @@ export default function PrivacyPage() {
         You can ask us to access, correct or delete the personal
         information we hold about you at any time by emailing{" "}
         <a
-          href="mailto:info@360travellers.com"
+          href="mailto:devenderthakur354@gmail.com"
           className="text-blue hover:underline"
         >
-          info@360travellers.com
+          devenderthakur354@gmail.com
         </a>
         .
       </p>

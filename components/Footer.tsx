@@ -4,7 +4,7 @@ import { Mail, Phone, Instagram, Facebook, Twitter } from "./icons";
 import Reveal from "./Reveal";
 import NewsletterForm from "./NewsletterForm";
 
-const LOGO = "/images/360-travellers-logo.jpg";
+const LOGO = "/images/360-travellers-logo.png";
 
 const columns = [
   {
@@ -94,17 +94,17 @@ export default function Footer() {
                 +91 85806 10324
               </a>
               <a
-                href="mailto:info@360travellers.com"
+                href="mailto:360travellers.com@gmail.com"
                 className="flex items-center gap-2.5 transition-colors hover:text-gold-soft"
               >
                 <Mail className="h-4 w-4 text-gold-soft" />
-                info@360travellers.com
+                360travellers.com@gmail.com
               </a>
               <a
-                href="mailto:info@360travellers.com"
+                href="mailto:devenderthakur354@gmail.com"
                 className="flex items-center gap-2.5 pl-[26px] text-xs text-cream/50 transition-colors hover:text-gold-soft"
               >
-                info@360travellers.com
+                devenderthakur354@gmail.com
               </a>
             </div>
 

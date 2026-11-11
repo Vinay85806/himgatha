@@ -47,12 +47,12 @@ export default function AboutPage() {
       <p>
         Have a question or want to plan something custom? Reach us at{" "}
         <a
-          href="mailto:info@360travellers.com"
+          href="mailto:devenderthakur354@gmail.com"
           className="text-blue hover:underline"
         >
-          info@360travellers.com
+          devenderthakur354@gmail.com
         </a>{" "}
-        or on WhatsApp at +91 85806 10324.
+        or on WhatsApp at +91 62309 52069.
       </p>
     </StaticPage>
   );

@@ -18,12 +18,6 @@ const nextConfig: NextConfig = {
         pathname: "/storage/v1/object/public/**",
       },
       {
-        // Current 360 Travellers Supabase Storage project
-        protocol: "https",
-        hostname: "edionddchqlsgcrmlcfe.supabase.co",
-        pathname: "/storage/v1/object/public/**",
-      },
-      {
         // Google Photos / Google user content (note: links may expire)
         protocol: "https",
         hostname: "*.googleusercontent.com",
