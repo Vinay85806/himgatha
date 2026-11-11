@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import StaticPage from "@/components/StaticPage";
 import { Mail, Phone, WhatsApp } from "@/components/icons";
 
@@ -11,26 +12,20 @@ const CHANNELS = [
   {
     Icon: Phone,
     label: "Call us",
-    value: "+91 62309 52069",
-    href: "tel:+916230952069",
+    value: "+91 85806 10324",
+    href: "tel:+918580610324",
   },
   {
     Icon: WhatsApp,
     label: "WhatsApp",
-    value: "+91 62309 52069",
-    href: "https://wa.me/916230952069",
+    value: "+91 85806 10324",
+    href: "https://wa.me/918580610324",
   },
   {
     Icon: Mail,
     label: "General enquiries",
-    value: "360travellers.com@gmail.com",
-    href: "mailto:360travellers.com@gmail.com",
-  },
-  {
-    Icon: Mail,
-    label: "Owner",
-    value: "devenderthakur354@gmail.com",
-    href: "mailto:devenderthakur354@gmail.com",
+    value: "info@360travellers.com",
+    href: "mailto:info@360travellers.com",
   },
 ];
 
@@ -67,9 +62,9 @@ export default function ContactPage() {
 
       <p>
         Prefer to browse first?{" "}
-        <a href="/#search" className="text-blue hover:underline">
+        <Link href="/#search" className="text-blue hover:underline">
           Explore our packages
-        </a>{" "}
+        </Link>{" "}
         and enquire directly from any trip that catches your eye.
       </p>
     </StaticPage>

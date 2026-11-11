@@ -28,12 +28,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticUrls: MetadataRoute.Sitemap = [
     { url: SITE, lastModified: now, changeFrequency: "daily", priority: 1 },
     { url: `${SITE}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${SITE}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
     { url: `${SITE}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE}/booking-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
     { url: `${SITE}/faqs`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${SITE}/help-centre`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE}/how-we-plan`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE}/terms`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${SITE}/travel-insurance`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
+    { url: `${SITE}/visa-guidance`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
   ];
 
   return [

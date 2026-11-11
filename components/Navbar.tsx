@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { Menu, Close, Phone, Mail } from "./icons";
 import { usePlanTrip } from "./PlanTripContext";
 
-const LOGO = "/images/360-travellers-logo.png";
+const LOGO = "/images/360-travellers-logo.jpg";
 
 
 const links = [
@@ -55,11 +55,11 @@ export default function Navbar() {
           </a>
           <span className="h-3 w-px bg-cream/25" />
           <a
-            href="mailto:360travellers.com@gmail.com"
+            href="mailto:info@360travellers.com"
             className="hidden items-center gap-1.5 transition-colors hover:text-gold-soft sm:flex"
           >
             <Mail className="h-3.5 w-3.5" />
-            360travellers.com@gmail.com
+            info@360travellers.com
           </a>
         </div>
       </div>

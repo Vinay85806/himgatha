@@ -5,7 +5,7 @@ import { WhatsApp, XMark } from "./icons";
 import EnquiryForm from "./EnquiryForm";
 import { usePlanTrip } from "./PlanTripContext";
 
-const WHATSAPP_NUMBER = "916230952069";
+const WHATSAPP_NUMBER = "918580610324";
 
 export default function PackageCardActions({
   title,

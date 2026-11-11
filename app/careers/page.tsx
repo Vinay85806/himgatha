@@ -17,10 +17,10 @@ export default function CareersPage() {
         If you&rsquo;re passionate about travel and want to be considered for
         future opportunities, feel free to write to us at{" "}
         <a
-          href="mailto:devenderthakur354@gmail.com"
+          href="mailto:info@360travellers.com"
           className="text-blue hover:underline"
         >
-          devenderthakur354@gmail.com
+          info@360travellers.com
         </a>{" "}
         with a bit about yourself — we keep good introductions on file.
       </p>

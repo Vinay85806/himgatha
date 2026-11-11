@@ -4,8 +4,8 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Phone } from "@/components/icons";
 
-const PHONE_E164 = "+916230952069";
-const PHONE_DISPLAY = "+91 62309 52069";
+const PHONE_E164 = "+918580610324";
+const PHONE_DISPLAY = "+91 85806 10324";
 
 export default function CallFloat() {
   const [hovered, setHovered] = useState(false);

@@ -13,10 +13,10 @@ export default function PressPage() {
         For media enquiries, interview requests, or anything press-related,
         write to us at{" "}
         <a
-          href="mailto:devenderthakur354@gmail.com"
+          href="mailto:info@360travellers.com"
           className="text-blue hover:underline"
         >
-          devenderthakur354@gmail.com
+          info@360travellers.com
         </a>{" "}
         and we&rsquo;ll get back to you.
       </p>

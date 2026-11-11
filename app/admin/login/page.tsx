@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { supabase } from "@/lib/supabase";
 
-const LOGO = "/images/360-travellers-logo.png";
+const LOGO = "/images/360-travellers-logo.jpg";
 
 export default function LoginPage() {
   const router = useRouter();

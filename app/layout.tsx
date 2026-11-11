@@ -24,9 +24,12 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://360travellers.com"),
-  title: "360 Travellers | Custom Tour Packages & Holidays",
+  title: {
+    default: "360 Travellers | Custom Tour Packages & Holidays",
+    template: "%s | 360 Travellers",
+  },
   description:
-    "Handcrafted holidays, private experiences and unforgettable stays across the Himalayas and beyond. Himachal, Spiti, Ladakh, Kashmir, Uttarakhand and 60+ destinations — designed around you.",
+    "Personalised domestic and international tour packages, private experiences and unforgettable stays across the Himalayas and beyond.",
   keywords: [
     "Himalayan tours",
     "luxury travel",
@@ -39,10 +42,45 @@ export const metadata: Metadata = {
     "honeymoon packages",
   ],
   openGraph: {
-    title: "360 Travellers — Curated Journeys",
+    title: "360 Travellers | Curated Journeys",
     description:
       "Handcrafted holidays and private experiences across 60+ destinations.",
     type: "website",
+    url: "https://360travellers.com",
+    siteName: "360 Travellers",
+    locale: "en_IN",
+    images: [
+      {
+        url: "/images/360-travellers-logo.jpg",
+        width: 1600,
+        height: 900,
+        alt: "360 Travellers",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "360 Travellers | Custom Tour Packages & Holidays",
+    description: "Handcrafted holidays and private experiences across 60+ destinations.",
+    images: ["/images/360-travellers-logo.jpg"],
+  },
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "360 Travellers",
+  url: "https://360travellers.com",
+  logo: "https://360travellers.com/images/360-travellers-logo.jpg",
+  email: "info@360travellers.com",
+  telephone: "+91 85806 10324",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+91 85806 10324",
+    contactType: "customer service",
+    availableLanguage: ["English", "Hindi"],
   },
 };
 
@@ -54,6 +92,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fraunces.variable} ${manrope.variable}`}>
       <body className="font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <PlanTripProvider>
           {children}
           <WhatsAppFloat />

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import StaticPage from "@/components/StaticPage";
 
 export const metadata: Metadata = {
@@ -50,8 +51,8 @@ export default function HowWePlanPage() {
       </div>
 
       <p>
-        Ready to start? <a href="/#search" className="text-blue hover:underline">Browse packages</a>{" "}
-        or message us directly on WhatsApp at +91 62309 52069.
+        Ready to start? <Link href="/#search" className="text-blue hover:underline">Browse packages</Link>{" "}
+        or message us directly on WhatsApp at +91 85806 10324.
       </p>
     </StaticPage>
   );
